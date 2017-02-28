@@ -1,4 +1,7 @@
 import * as THREE from 'three';
+import {
+  Detector
+} from '../../util/';
 require('../index.css');
 
 window.onload = () => {
@@ -14,9 +17,16 @@ window.onload = () => {
     color: 0x00ff00
   });
   var cube = new THREE.Mesh(geometry, material);
-  
+
   scene.add(cube);
   camera.position.z = 5;
+  
+  if (Detector.webgl) {
+    render();
+  } else {
+    var warning = Detector.getWebGLErrorMessage();
+    document.getElementById('container').appendChild(warning);
+  }
 
   function render() {
     requestAnimationFrame(render);

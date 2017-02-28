@@ -21,4 +21,5 @@ if (!window.cancelAnimationFrame) {
       window.clearTimeout);
 }
 
-export default {}
+export * from './detector';
+export * from './helper';
