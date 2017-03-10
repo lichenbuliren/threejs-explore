@@ -27,3 +27,7 @@ function render() {
 }
 render();
 ```
+
+### 材质 Materail
+threejs 里面有两种材质会对光源产生反应：`MeshLamberMaterial` 和 `MeshPhongMaterial`;
+其中 `MeshBasicMaterial` 材质不会对光源产生反应，而只会以指定的颜色渲染物体, 具体可查看 Demo `spinning-cube`;
