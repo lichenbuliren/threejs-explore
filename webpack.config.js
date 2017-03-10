@@ -12,7 +12,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 var entries = getEntry('./src/view/**/*.js', './src/');
-entries.vendors = ['three', './src/util/index.js'];
+entries.vendors = ['three', './src/util/index.js', './src/lib/dat.gui.min.js','./src/lib/stats.min.js'];
 
 var webpackConfig = {
   entry: entries,
