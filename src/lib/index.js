@@ -1,5 +1,5 @@
 var dat = require('./dat.gui.min');
-var stats = require('./stats.min');
+var Stats = require('./stats.min');
 
 export var dat;
-export var stats;
+export var Stats;
