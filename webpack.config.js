@@ -100,7 +100,7 @@ function getEntry(globPath, pathDir) {
   var entry, dirname;
   for (var i = 0; i < files.length; i++) {
     entry = files[i];
-    dirname = path.dirname(entry);    
+    dirname = path.dirname(entry);
     // 作为 entry 的 key 值，需要去掉路径前面的 './dirname' 也就是 './src' ;
     dirname = pathDir ? dirname.replace(new RegExp('^' + pathDir), '') : dirname;
     entries[dirname] = entry;

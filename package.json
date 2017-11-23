@@ -38,6 +38,7 @@
     "webpack-md5-hash": "0.0.5"
   },
   "dependencies": {
+    "bluebird": "^3.5.0",
     "glob": "^7.1.1",
     "three": "^0.84.0"
   }
